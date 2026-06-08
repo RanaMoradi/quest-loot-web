@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quest Loot Tracker - track and total your loot items">
+    <meta name="author" content="Rana Moradi">
+    <title>Quest Loot Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Quest Loot Tracker</h1>
+
+        <!-- Input Form -->
+        <section aria-label="Add Loot">
+            <div class="form-group">
+                <label for="lootName">Loot Name</label>
+                <input type="text" id="lootName" placeholder="Enter loot name">
+            </div>
+
+            <div class="form-group">
+                <label for="lootValue">Loot Value</label>
+                <input type="number" id="lootValue" placeholder="Enter loot value" min="1">
+            </div>
+
+            <button type="button" id="addBtn">Add Loot</button>
+
+            <!-- Validation message area -->
+            <p id="message" role="alert"></p>
+        </section>
+
+        <!-- Loot Display Area -->
+        <section aria-label="Loot List">
+            <h2>Loot Collected</h2>
+            <ul id="lootList"></ul>
+            <p id="total"></p>
+        </section>
+    </main>
+
+    <script src="js/loot.js"></script>
+</body>
+</html>
